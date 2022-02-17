@@ -12,6 +12,7 @@
   background-color: rgb(243, 242, 242);
   display: flex;
   align-items: center;
+  z-index: 2;
 }
 
 .p-circle {
@@ -20,4 +21,13 @@
   border-radius: 50px;
   margin: 3px;
   background-color: white;
+}
+
+.p-img {
+  height: 100%;
+  transition: all 10s ease;
+}
+
+.p:hover .p-img {
+  transform: translateX(-50%);
 }

@@ -2,6 +2,7 @@
   height: 100vh;
   display: flex;
   align-items: center;
+  background-color: #eeeeee;
 }
 
 .a-left {
@@ -49,5 +50,3 @@
 .a-desc {
   font-weight: 300;
 }
-
-
