@@ -2,6 +2,7 @@ import React from "react";
 import "./intro.css";
 import Me from "../../img/meCutOut.png";
 
+
 const Intro = () => {
   return (
     <div className="i">

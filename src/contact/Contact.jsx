@@ -1,13 +1,33 @@
-import React, { useRef } from "react";
+// TODO: content
+import React, { useRef, useState } from "react";
 import "./contact.css";
 import Phone from "../img/phone.png";
 import Email from "../img/email.png";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const formRef = useRef();
+  const [done, setDone] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_xzd0mom",
+        "template_kzcn5vf",
+        formRef.current,
+        "user_YRGFEoMUxQtcIOPjpDfg9"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setDone(true);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   return (
@@ -40,6 +60,8 @@ const Contact = () => {
             <input type="text" placeholder="Email" name="user_email" />
             <textarea rows="5" placeholder="Bericht" name="message" />
             <button>Submit</button>
+            {done &&
+              "Dankuwel voor uw bericht! u zal zo snel mogelijk antwoord krijgen"}
           </form>
         </div>
       </div>
