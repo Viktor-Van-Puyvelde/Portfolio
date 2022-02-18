@@ -2,7 +2,6 @@ import React from "react";
 import "./intro.css";
 import Me from "../../img/meCutOut.png";
 
-
 const Intro = () => {
   return (
     <div className="i">
@@ -12,9 +11,7 @@ const Intro = () => {
           <h1 className="i-name">Viktor Van Puyvelde</h1>
           <div className="i-title">
             <div className="i-title-wrapper">
-              <div className="i-title-item">
-                Student Toegepaste Informatica @HoGent
-              </div>
+              <div className="i-title-item">Student Toegepaste Informatica</div>
               <div className="i-title-item">Web Developer</div>
               <div className="i-title-item">Java Developer</div>
             </div>

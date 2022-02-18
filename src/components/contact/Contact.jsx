@@ -1,13 +1,16 @@
 // TODO: content
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useContext } from "react";
 import "./contact.css";
 import Phone from "../../img/phone.png";
 import Email from "../../img/email.png";
 import emailjs from "@emailjs/browser";
+import { ThemeContext } from "../../context";
 
 const Contact = () => {
   const formRef = useRef();
   const [done, setDone] = useState(false);
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -31,7 +34,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="c">
+    <div className="c" style={{ backgroundColor: darkMode && "#2f2f2c" }}>
       <div className="c-bg"></div>
       <div className="c-wrapper">
         <div className="c-left">
@@ -55,10 +58,30 @@ const Contact = () => {
             Totam earum quia exercitationem cumque maxime iste!
           </p>
           <form ref={formRef} onSubmit={handleSubmit}>
-            <input type="text" placeholder="Naam" name="user_name" />
-            <input type="text" placeholder="Onderwerp" name="user_subject" />
-            <input type="text" placeholder="Email" name="user_email" />
-            <textarea rows="5" placeholder="Bericht" name="message" />
+            <input
+              style={{ backgroundColor: darkMode && "#333" }}
+              type="text"
+              placeholder="Naam"
+              name="user_name"
+            />
+            <input
+              style={{ backgroundColor: darkMode && "#333" }}
+              type="text"
+              placeholder="Onderwerp"
+              name="user_subject"
+            />
+            <input
+              style={{ backgroundColor: darkMode && "#333" }}
+              type="text"
+              placeholder="Email"
+              name="user_email"
+            />
+            <textarea
+              style={{ backgroundColor: darkMode && "#333" }}
+              rows="5"
+              placeholder="Bericht"
+              name="message"
+            />
             <button>Submit</button>
             {done &&
               "Dankuwel voor uw bericht! u zal zo snel mogelijk antwoord krijgen"}

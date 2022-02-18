@@ -1,13 +1,20 @@
 //TODO: writing content (a-sub and a-desc)
-import React from "react";
+import React, { useContext } from "react";
 import "./about.css";
 import About2Img from "../../img/about2.png";
+import { ThemeContext } from "../../context";
 
 const About = () => {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
+
   return (
-    <div className="a">
+    <div className="a" style={{ backgroundColor: darkMode && "#2f2f2c" }}>
       <div className="a-left">
-        <div className="a-card bg"></div>
+        <div
+          className="a-card bg"
+          style={{ backgroundColor: darkMode && "#a6a6a1" }}
+        ></div>
         <div className="a-card">
           <img src={About2Img} alt="" className="a-img" />
         </div>
