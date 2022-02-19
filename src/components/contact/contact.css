@@ -19,6 +19,7 @@
 .c-left {
   flex: 1;
   max-width: 50%;
+  min-width: 360px;
 }
 
 .c-right {
@@ -27,6 +28,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  min-width: 350px;
 }
 
 .c-title {
@@ -81,4 +83,41 @@ button {
   color: white;
   font-weight: 500;
   cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .c-wrapper {
+    flex-direction: column;
+    padding: 0px 50px;
+  }
+
+  .c-title {
+    font-size: 30px;
+  }
+
+  .c-info-item {
+    margin: 20px 0px;
+    width: 100%;
+  }
+
+  .c-desc {
+    font-size: 15px;
+  }
+
+  form {
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  input {
+    width: 35%;
+    height: 40px;
+    margin: 10px;
+    margin-left: 0;
+  }
+
+  button {
+    margin-top: 10px;
+  }
 }

@@ -50,3 +50,27 @@
 .a-desc {
   font-weight: 300;
 }
+
+@media screen and (max-width: 600px) {
+  .a {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .a-left {
+    width: 100%;
+  }
+
+  .a-card {
+    height: 30vh;
+  }
+
+  .a-card.bg,
+  .a-award {
+    display: none;
+  }
+
+  .a-right {
+    padding: 20px;
+  }
+}

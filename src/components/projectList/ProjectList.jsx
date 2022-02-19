@@ -1,7 +1,7 @@
 // TODO: fix img size
 import React from "react";
 import "./projectList.css";
-import Project from "../product/Project";
+import Project from "../project/Project"
 import { projects } from "../../data";
 
 const ProjectList = () => {
