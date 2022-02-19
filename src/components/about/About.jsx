@@ -11,10 +11,7 @@ const About = () => {
   return (
     <div className="a" style={{ backgroundColor: darkMode && "#2f2f2c" }}>
       <div className="a-left">
-        <div
-          className="a-card bg"
-          style={{ backgroundColor: darkMode && "#a6a6a1" }}
-        ></div>
+        <div className="a-card bg"></div>
         <div className="a-card">
           <img src={About2Img} alt="" className="a-img" />
         </div>
@@ -22,16 +19,15 @@ const About = () => {
       <div className="a-right">
         <h1 className="a-title">Over mij</h1>
         <p className="a-sub">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia vero
-          aut nam sapiente labore alias debitis tempora ratione, officiis
-          consequatur perferendis magni ipsa recusandae quis delectus voluptates
-          eius optio itaque!
+          Ik ben Viktor van Puyvelde, student Toegepaste Informatica aan HOGENT
+          te Gent. Ik zit momenteel in mijn tweede jaar in de
+          specialisatierichting "Web development".
         </p>
         <p className="a-desc">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis aut,
-          quod consectetur repellendus ipsam perferendis eum quas dolor est vel
-          culpa voluptate reprehenderit porro dignissimos fuga deleniti esse qui
-          laudantium?
+          Ik ben afkomstig uit Sint-Pauwels, waar ik ook mijn lager onderwijs
+          heb gedaan in de plaatselijke lagere school "De Zandloper." <br />
+          In het Sint-Jozef-Klein-Seminarie te Sint-Niklaas, heb ik met glans
+          het secundair onderwijs doorlopen.
         </p>
       </div>
     </div>

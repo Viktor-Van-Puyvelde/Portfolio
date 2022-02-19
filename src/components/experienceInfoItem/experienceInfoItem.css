@@ -1,0 +1,43 @@
+.eit {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  /* gap: 5rem; */
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 200;
+  position: relative;
+}
+.items {
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+  left: 15rem;
+}
+.item {
+  font-family: "Roboto Mono", monospace;
+  background-color: rgb(214, 214, 214);
+  padding: 0.7rem;
+  border-radius: 8px;
+  margin-right: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .eit {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .items {
+    position: initial;
+    gap: 1rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+}

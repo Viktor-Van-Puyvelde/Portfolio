@@ -1,12 +1,16 @@
 // TODO: fix img size
-import React from "react";
+import React, { useContext } from "react";
 import "./projectList.css";
-import Project from "../project/Project"
+import Project from "../project/Project";
 import { projects } from "../../data";
+import { ThemeContext } from "../../context";
 
 const ProjectList = () => {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
+
   return (
-    <div className="pl">
+    <div className="pl" style={{ backgroundColor: darkMode && "#2f2f2c" }}>
       <div className="pl-texts">
         <h1 className="pl-title">Projecten</h1>
         <p className="pl-desc">
