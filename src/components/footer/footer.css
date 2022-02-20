@@ -1,0 +1,41 @@
+.f {
+  background-color: #eeeeee;
+  display: flex;
+  gap: 3rem;
+  padding: 20px;
+}
+
+.f-collumn {
+  flex: 2;
+}
+.f-col2,
+.f-col3,
+.f-col4 {
+  flex: 1;
+}
+.f-collumn-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.copyright {
+  padding-left: 20px;
+  background-color: #eeeeee;
+  text-align: left;
+  padding: 1rem 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .f {
+    flex-direction: column;
+    gap: 0rem;
+    /* & > div {
+      margin-top: 5rem;
+    } */
+  }
+  .f-collumn {
+    max-width: 100%;
+  }
+  .copyright {
+    margin-top: 0;
+  }
+}

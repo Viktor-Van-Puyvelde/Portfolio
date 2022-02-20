@@ -1,0 +1,17 @@
+.heading {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 1rem;
+  list-style-type: none;
+}
+a {
+  font-size: 1.3rem;
+  color: black;
+}
