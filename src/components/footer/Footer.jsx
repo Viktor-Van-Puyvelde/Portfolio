@@ -39,7 +39,7 @@ const Footer = () => {
             links={[
               {
                 title: "LinkedIn",
-                path: "https://www.linkedin.com/",
+                path: "https://www.linkedin.com/in/viktor-van-puyvelde-42360623a/",
               },
             ]}
           />
