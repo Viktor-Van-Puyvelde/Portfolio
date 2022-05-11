@@ -119,4 +119,8 @@ button {
   button {
     margin-top: 10px;
   }
+
+  textarea {
+    max-width: 300px;
+  }
 }

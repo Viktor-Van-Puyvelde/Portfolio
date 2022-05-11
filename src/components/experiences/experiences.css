@@ -2,6 +2,8 @@
   height: 100vh;
   display: flex;
   align-items: center;
+  max-height: fit-content;
+  min-height: fit-content;
 }
 
 .e-left {
@@ -81,7 +83,7 @@ a {
 
     @media only screen and (max-width: 768px) {
       .e {
-        min-height: 135vh;
+        height: auto;
       }
 
       .info-heading {
