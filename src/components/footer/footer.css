@@ -14,8 +14,9 @@
   flex: 1;
 }
 .f-collumn-title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 .copyright {
   padding-left: 20px;
@@ -28,14 +29,19 @@
   .f {
     flex-direction: column;
     gap: 0rem;
-    /* & > div {
-      margin-top: 5rem;
-    } */
   }
   .f-collumn {
     max-width: 100%;
   }
   .copyright {
     margin-top: 0;
+  }
+
+  .f-collumn-title {
+    font-size: 2rem;
+  }
+
+  .f-desc {
+    font-size: 0.9rem;
   }
 }

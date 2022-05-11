@@ -1,5 +1,4 @@
 .c {
-  height: 100vh;
   position: relative;
 }
 
@@ -91,6 +90,7 @@ button {
   }
 
   .c-title {
+    margin-top: 1rem;
     font-size: 30px;
   }
 

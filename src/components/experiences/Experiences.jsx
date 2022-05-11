@@ -26,16 +26,19 @@ const Experiences = () => {
               title="Lager onderwijs"
               items={["De Zandloper, Sint-Pauwels"]}
               darkMode={darkMode}
+              long={true}
             />
             <ExperienceInfoItem
               title="Secundair onderwijs"
               items={["Sint-Jozef-Klein-Seminarie, Sint-Niklaas"]}
               darkMode={darkMode}
+              long={true}
             />
             <ExperienceInfoItem
               title="Hoger onderwijs"
               items={["HOGENT, Gent"]}
               darkMode={darkMode}
+              long={false}
             />
           </div>
           <div className="info-item">
@@ -43,13 +46,15 @@ const Experiences = () => {
 
             <ExperienceInfoItem
               title="Front-end"
-              items={["HTML", "CSS", "JavaScript", "REACT"]}
+              items={["HTML", "CSS", "JavaScript", "REACT", "Java"]}
               darkMode={darkMode}
+              long={false}
             />
             <ExperienceInfoItem
               title="Back-end"
-              items={["Node", "MongoDB", "MySQL", "Koa", "Java"]}
+              items={["Node", "MongoDB", "MySQL"]}
               darkMode={darkMode}
+              long={false}
             />
           </div>
           <div className="info-item">
@@ -59,6 +64,7 @@ const Experiences = () => {
               title="Studentenjobs"
               items={["B-Post, Sint-Niklaas", "COOP Apotheek Sint-Pauwels"]}
               darkMode={darkMode}
+              long={false}
             />
           </div>
         </div>

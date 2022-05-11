@@ -14,9 +14,9 @@ const ProjectList = () => {
       <div className="pl-texts">
         <h1 className="pl-title">Projecten</h1>
         <p className="pl-desc">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-          quia fugit laudantium consequuntur, quam cum! Sequi enim porro odio
-          quaerat ab quis. Esse omnis nam, id nulla ab repellat perspiciatis?
+          Hieronder vindt u al de projecten die ik al gemaakt heb in mijn
+          carrière. Doordat ik nu nog bezig ben met studeren zijn de volgende
+          projecten allemaal schoolopdrachten.
         </p>
       </div>
       <div className="pl-list">

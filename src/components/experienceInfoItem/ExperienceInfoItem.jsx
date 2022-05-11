@@ -2,7 +2,7 @@ import React from "react";
 import PText from "../pText/PText";
 import "./experienceInfoItem.css";
 
-const ExperienceInfoItem = ({ title, items, darkMode }) => {
+const ExperienceInfoItem = ({ title, items, darkMode, long }) => {
   return (
     <div className="eit">
       <h1 className="title">{title}</h1>
@@ -12,6 +12,7 @@ const ExperienceInfoItem = ({ title, items, darkMode }) => {
             className="item"
             key={index}
             style={{ backgroundColor: darkMode && "#333" }}
+            id={long ? "itemLong" : ""}
           >
             <PText>{item}</PText>
           </div>

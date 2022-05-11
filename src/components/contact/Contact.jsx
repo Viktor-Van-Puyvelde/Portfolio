@@ -52,10 +52,8 @@ const Contact = () => {
         </div>
         <div className="c-right">
           <p className="c-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem aliquam officia maiores perferendis ex tempore alias
-            reiciendis pariatur atque necessitatibus, adipisci possimus unde.
-            Totam earum quia exercitationem cumque maxime iste!
+            Mocht u vragen hebben voor mij, aarzal dan zeker niet om mij een
+            bericht te sturen via onderstaand formulier!
           </p>
           <form ref={formRef} onSubmit={handleSubmit}>
             <input
@@ -82,7 +80,7 @@ const Contact = () => {
               placeholder="Bericht"
               name="message"
             />
-            <button>Submit</button>
+            <button>Indienen</button>
             {done &&
               "Dankuwel voor uw bericht! u zal zo snel mogelijk antwoord krijgen"}
           </form>

@@ -63,3 +63,42 @@ a {
   text-decoration: none;
   font-size: 25px;
 }
+
+@media only screen and (max-width: 1240px) {
+  .e-card.bg {
+    display: none;
+  }
+
+  .e-right {
+    margin-right: 20px;
+    justify-content: right;
+  }
+
+  @media only screen and (max-width: 1070px) {
+    .e-card {
+      display: none;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .e {
+        min-height: 135vh;
+      }
+
+      .info-heading {
+        font-size: 20px;
+      }
+
+      .e-desc {
+        max-width: 350px;
+      }
+
+      .e-right {
+        display: none;
+      }
+
+      .info-item {
+        max-width: 350px;
+      }
+    }
+  }
+}

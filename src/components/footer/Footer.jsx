@@ -13,10 +13,9 @@ const Footer = () => {
         <div className="f-collumn">
           <h1 className="f-collumn-title">Viktor Van Puyvelde</h1>
           <p className="f-desc">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos sit
-            nostrum in eveniet excepturi sequi quo tenetur explicabo quam enim
-            repellendus iste, ex mollitia ratione omnis perferendis? Dolorum,
-            quisquam tempore?
+            Ik ben student Toegepaste Informatica aan HoGent en specialiseer me
+            in het bouwen van java programma's en het maken van
+            websites/web-applicaties
           </p>
         </div>
         <div className="f-col2">
@@ -46,14 +45,14 @@ const Footer = () => {
           />
         </div>
       </div>
-      <div
+      {/* <div
         className="copyright"
         style={{ backgroundColor: darkMode && "#2f2f2c" }}
       >
         <p>
           &#169; 2022 - Viktor Van Puyvelde | designed by Viktor Van Puyvelde
         </p>
-      </div>
+      </div> */}
     </>
   );
 };

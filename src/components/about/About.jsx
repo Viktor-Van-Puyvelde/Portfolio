@@ -27,7 +27,12 @@ const About = () => {
           Ik ben afkomstig uit Sint-Pauwels, waar ik ook mijn lager onderwijs
           heb gedaan in de plaatselijke lagere school "De Zandloper." <br />
           In het Sint-Jozef-Klein-Seminarie te Sint-Niklaas, heb ik met glans
-          het secundair onderwijs doorlopen.
+          het secundair onderwijs doorlopen. Daar heb ik mijn diploma
+          Economie-Moderne Talen behaald. <br />
+          Momenteel ben ik bezig met mijn studies in Toegepaste Informatica aan
+          HoGent. <br /> <br />
+          Naast mijn schoolcarrière ben ik ook nog full-time leider bij de
+          scouts Mgr. Bermijn in mijn thuisdorp Sint-Pauwels.
         </p>
       </div>
     </div>
