@@ -5,32 +5,45 @@ import Phone from "../../img/phone.png";
 import Email from "../../img/email.png";
 import emailjs from "@emailjs/browser";
 import { ThemeContext } from "../../context";
+import validator from "validator";
 
 const Contact = () => {
   const formRef = useRef();
   const [done, setDone] = useState(false);
+  const [emailError, setEmailError] = useState(false);
+  const [email, setEmail] = useState("");
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_xzd0mom",
-        "template_kzcn5vf",
-        formRef.current,
-        "user_YRGFEoMUxQtcIOPjpDfg9"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setDone(true);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    if (!emailError) {
+      emailjs
+        .sendForm(
+          "service_xzd0mom",
+          "template_kzcn5vf",
+          formRef.current,
+          "user_YRGFEoMUxQtcIOPjpDfg9"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            setDone(true);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    }
+  };
+
+  const validateEmail = () => {
+    if (validator.isEmail(email)) {
+      setEmailError(false);
+    } else {
+      setEmailError(true);
+    }
   };
 
   return (
@@ -59,30 +72,36 @@ const Contact = () => {
             <input
               style={{ backgroundColor: darkMode && "#333" }}
               type="text"
-              placeholder="Naam"
+              placeholder="Naam*"
               name="user_name"
+              required
             />
             <input
               style={{ backgroundColor: darkMode && "#333" }}
               type="text"
-              placeholder="Onderwerp"
+              placeholder="Onderwerp*"
               name="user_subject"
+              required
             />
             <input
               style={{ backgroundColor: darkMode && "#333" }}
               type="text"
-              placeholder="Email"
+              placeholder="E-mail*"
               name="user_email"
+              required
+              onChange={(e) => setEmail(e.target.value)}
             />
             <textarea
               style={{ backgroundColor: darkMode && "#333" }}
               rows="5"
-              placeholder="Bericht"
+              placeholder="Bericht*"
               name="message"
+              required
             />
-            <button>Indienen</button>
+            <button onClick={() => validateEmail()}>Indienen</button>
             {done &&
-              "Dankuwel voor uw bericht! u zal zo snel mogelijk antwoord krijgen"}
+              "\tDankuwel voor uw bericht! U zal zo snel mogelijk antwoord krijgen"}
+            {emailError && "\tGeef een geldig E-mailadres in."}
           </form>
         </div>
       </div>
