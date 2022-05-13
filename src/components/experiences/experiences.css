@@ -84,6 +84,7 @@ a {
     @media only screen and (max-width: 768px) {
       .e {
         height: auto;
+        margin-top: 1rem;
       }
 
       .info-heading {
@@ -100,6 +101,10 @@ a {
 
       .info-item {
         max-width: 350px;
+      }
+
+      .dCV {
+        margin-bottom: 1rem;
       }
     }
   }
